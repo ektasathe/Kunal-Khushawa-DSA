@@ -1,1 +1,53 @@
+QUESTION 1 :
 Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.
+===================================================================================================================
+import java.util.Scanner;
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       // System.out.println("Try programiz.pro");
+      Scanner scanner = new Scanner(System.in); 
+      System.out.println("Welcome in Java program to find largest and smallest of three numbers");  
+      System.out.println("Please enter first number :"); 
+      int x = scanner.nextInt();   
+      System.out.println("Please enter second number :"); 
+      int y = scanner.nextInt();   
+      System.out.println("Please enter third number :"); 
+      int z = scanner.nextInt();
+      
+     int min = minn(x,y,z);
+      System.out.println("min" + min);
+      int max = maxx(x,y,z);
+     System.out.println("max" + max);
+       
+    }
+   static int minn(int a, int b, int c)
+    {
+        int mi = a ;
+        if ( mi > b)
+        {
+            mi =b;
+        }
+        if (mi > c)
+        {
+           mi = c; 
+        }
+        return mi ;
+    }
+    static int maxx(int a, int b, int c)
+    {
+        int ma = a ;
+        if ( ma < b)
+        {
+            ma =b;
+        }
+        if (ma < c)
+        {
+           ma = c; 
+        }
+        return ma ;
+    } 
+}
+
+=========================================================================
+QUESTION 2:
