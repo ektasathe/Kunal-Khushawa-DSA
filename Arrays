@@ -23,4 +23,19 @@ class Solution {
         return false;
     }
 }
-
+=================================
+QUE3 : FIND MIN AND MAX VALUE OF STRING(HERE RETURN 2 VALUSE ONE TIME)
+---------------------------------
+class Solution {
+    public Pair<Long, Long> getMinMax(int[] arr) {
+        // Code Here
+            long minn = Integer.MAX_VALUE;
+            long maxx = Integer.MIN_VALUE;
+    
+            for(int i = 0; i<arr.length; i++){
+            minn = Math.min(minn, arr[i]);
+            maxx = Math.max(maxx, arr[i]);
+        }
+        return new Pair<>(minn,maxx);
+    }
+}
